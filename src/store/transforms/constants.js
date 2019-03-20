@@ -1,0 +1,4 @@
+// dictionary action types
+export const ADD_TRANSFORM_ROW = "ADD_TRANSFORM_ROW";
+export const REMOVE_TRANSFORM_ROW = "REMOVE_TRANSFORM_ROW";
+export const REMOVE_DICTIONARY = "REMOVE_DICTIONARY";
