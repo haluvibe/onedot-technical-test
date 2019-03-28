@@ -10,8 +10,7 @@ import rootReducer from "./rootReducer";
 
 const persistConfig = {
   key: "root",
-  storage,
-  blacklist: ["dictionaries", "transforms"]
+  storage
 };
 
 const persistedReducer = persistReducer(persistConfig, rootReducer);
