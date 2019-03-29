@@ -10,8 +10,14 @@ It's a little verbose for the requirements of the test. For example, I could hav
 
 ### Tests
 
-I chose to use Cypress for testing.
+I chose to unit test the redux logic with the expect library.
+
+Run `yarn run test` to start the expect library tests.
+
+For the components/containers, I chose rather to write integration tests with Cypress instead of unit tests with Jest/Enzyme.
+
+For an example of Jest/Enzyme unit tests please see [creaologix-tech-test](https://github.com/haluvibe/crealogix-tech-test)
 
 Run `yarn start` to start the local development server
 
-and then `yarn run cypress open` to start the tests
+and then `yarn run cypress open` to start the cypress tests

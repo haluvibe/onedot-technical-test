@@ -13,7 +13,7 @@ const INITIAL_STATE = {
 const dictionariesReducer = (state = INITIAL_STATE, { type, payload }) => {
   switch (type) {
     case ADD_TRANSFORM_ROW:
-      // if an existing From exists, then update that object entirely
+      // if an existing From exists, then replace that object entirely
       const existingFrom = state.rows.find(
         transform =>
           transform.from === payload.from &&
@@ -27,7 +27,7 @@ const dictionariesReducer = (state = INITIAL_STATE, { type, payload }) => {
           ]
         };
       }
-      // Otherwise, just push the payload to the end of the array normally
+      // Otherwise, just add the payload to the array
       return {
         rows: [...state.rows, payload]
       };
