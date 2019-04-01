@@ -2,6 +2,8 @@
 
 ## Notes
 
+Instead of highlighting invalid transforms this app does not allow for them to be created in the first place.
+
 ### Things I would improve
 
 I tried to include something a file/folder structure that would be used in a production app.
